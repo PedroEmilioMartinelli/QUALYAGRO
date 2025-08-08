@@ -1,24 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
+html,
+body {
   height: 100%;
   width: 100%;
 }
 
 body {
-  background: url("/image/ChatGPT\ Image\ Aug\ 4\,\ 2025\,\ 07_39_58\ PM.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("/image/ChatGPT\ Image\ Aug\ 4\,\ 2025\,\ 07_39_58\ PM.png")
+    no-repeat center center/cover;
   height: auto;
 }
 
 .overlay {
   min-height: 100vh;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.8)
+  );
 }
 
 .header {
@@ -26,7 +32,6 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
 }
 
 .header-right {
@@ -34,24 +39,17 @@ body {
   gap: 40px;
 }
 
-.header-right h3,
 .header-right a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 22px;
-  display: flex;
-  gap: 300px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding-right: 20px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .header-right a:hover {
-  text-decoration: underline;
-  transform: scale(1.1);
-}
-
-.header-right a:hover {
-  text-decoration: underline;
+  color: #ff9800;
+  transform: scale(1.08);
 }
 
 .logo {
@@ -68,7 +66,6 @@ main {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
   align-items: flex-start;
   padding-top: 35vh;
 }
@@ -82,43 +79,86 @@ main {
 }
 
 .HomeText {
-  font-size: 5rem;
-  color: #ffffff;
+  font-size: 4.5rem;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  transition: transform 0.9s ease;
+  transition: transform 0.5s ease;
 }
 
 .HomeText:hover {
-  text-shadow: 2px 2px 5px rgba(218, 165, 0, 0.9);
-  transform: scale(1.05);
+  animation: goldenGlow 1.5s infinite ease-in-out;
+}
+
+@keyframes goldenGlow {
+  0% {
+    text-shadow: 2px 2px 5px rgba(218, 165, 32, 0.6);
+  }
+  50% {
+    text-shadow: 2px 2px 20px rgba(255, 215, 0, 1);
+  }
+  100% {
+    text-shadow: 2px 2px 5px rgba(218, 165, 32, 0.6);
+  }
 }
 
 .subtitle {
-  font-size: 1.8rem;
-  color: #ffffff;
+  font-size: 1.9rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
   margin-top: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  letter-spacing: 0.5px;
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .botao-container {
   margin-top: 25px;
 }
 
-.botaoBotao {
-  background-color: rgb(255, 124, 1);
+a.botaoBotao {
+  background-color: #e65100;
   color: #ffffff;
-  padding: 12px 24px;
-  border: none;
-  border-radius: 12px;
-  font-size: 1rem;
-  cursor: pointer;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  cursor: po;
+  text-decoration: none;
 }
 
-.botaoBotao:hover {
-  background-color: #ff9933;
-  transform: scale(1.05);
+a.botaoBotao:hover {
+  animation: buttonPulse 4s infinite ease-in-out, shine 10.2s ease forwards;
+  background-color: #ff6f00;
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(255, 111, 0, 0.9), 0 0 50px rgba(255, 140, 0, 0.7);
 }
 
-/*ola/
+@keyframes buttonPulse {
+  0% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.6), 0 0 20px rgba(255, 140, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(255, 111, 0, 1), 0 0 50px rgba(255, 140, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 10px rgba(255, 111, 0, 0.6), 0 0 20px rgba(255, 140, 0, 0.4);
+  }
+}
+
+/* Brilho correndo pelo botão */
+@keyframes shine {
+  0% {
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.5) 50%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
