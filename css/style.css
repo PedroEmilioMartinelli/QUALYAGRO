@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: url("/image/ChatGPT\ Image\ Aug\ 4\,\ 2025\,\ 07_39_58\ PM.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.overlay {
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.header-right {
+  display: flex;
+  gap: 40px;
+}
+
+.header-right h3,
+.header-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 22px;
+  display: flex;
+  gap: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-right: 20px;
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.header-right a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  height: 120px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  padding-top: 35vh;
+}
+
+.main-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+
+.HomeText {
+  font-size: 5rem;
+  color: #ffffff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  transition: transform 0.9s ease;
+}
+
+.HomeText:hover {
+  text-shadow: 2px 2px 5px rgba(218, 165, 0, 0.9);
+  transform: scale(1.05);
+}
+
+.subtitle {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-top: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.botao-container {
+  margin-top: 25px;
+}
+
+.botaoBotao {
+  background-color: rgb(255, 124, 1);
+  color: #ffffff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botaoBotao:hover {
+  background-color: #ff9933;
+  transform: scale(1.05);
+}
+
+/*ola/
