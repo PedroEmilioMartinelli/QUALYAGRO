@@ -2,10 +2,10 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="/css/style.css" />
-    <link rel="shortcut icon" type="imagex/png" href="/image/QualyLogo1.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>QualyAgro - Tecnologia para Armazenagem e Secagem para Grãos</title>
+    <link rel="shortcut icon" type="imagex/png" href="/image/QualyLogo1.ico" />
+    <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
     <div class="overlay">
@@ -15,31 +15,55 @@
             <img
               src="/image/WhatsApp Image 2025-08-07 at 18.43.35.png"
               class="logo"
+              alt="QualyAgro Logo"
             />
           </div>
         </div>
         <div class="header-right">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">Empresa</a>
-          <a class="nav-link" href="#">Treinamentos</a>
-          <a class="nav-link" href="#">Vídeos</a>
-          <a class="nav-link" href="#">Feiras e Eventos</a>
-          <a class="nav-link" href="#">Parcerias</a>
+          <a class="nav-link nav-home" href="#">Início</a>
+          <a class="nav-link nav-company" href="#">Empresa</a>
+          <a class="nav-link nav-training" href="#">Treinamentos</a>
+          <a class="nav-link nav-videos" href="#">Vídeos</a>
+          <a class="nav-link nav-events" href="#">Eventos e Feiras</a>
+          <a class="nav-link nav-partners" href="#">Parceiros</a>
+          <div class="language-selector">
+            <select id="lang-switcher" aria-label="Selecionar idioma">
+              <option value="pt" selected>🇧🇷 Português</option>
+              <option value="en">🇺🇸 English</option>
+              <option value="es">🇪🇸 Español</option>
+            </select>
+          </div>
         </div>
       </header>
+
       <main>
         <div class="main-text">
           <h1 class="HomeText">Tecnologia que Protege seu Grão</h1>
           <p class="subtitle">
-            Seu grão está seguro ou você ainda confia na sorte?
+            Preserve a qualidade e o valor da sua safra com a nossa tecnologia
           </p>
           <div class="botao-container">
-            <div class="botao-container">
-              <a class="botaoBotao" href="/prdodutos.html">Conheça nossos produtos</a>
-            </div>
+            <a class="botaoBotao" href="/produtos.html"
+              >Conheça nossos produtos</a
+            >
           </div>
         </div>
       </main>
     </div>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <p>&copy; 2025 QualyAgro - Todos os direitos reservados.</p>
+        <p>Desenvolvido por Pedro Emilio Martinelli</p>
+        <div class="footer-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Uso</a>
+          <a href="#">Contato</a>
+          <a href="#">Trabalhe Conosco</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/JS/lang.js"></script>
   </body>
 </html>
