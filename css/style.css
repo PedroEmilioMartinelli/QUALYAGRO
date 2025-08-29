@@ -175,6 +175,7 @@ main {
 
 .botao-container {
   margin-top: 35px;
+  margin-bottom: 80px;
 }
 
 a.botaoBotao {
@@ -230,7 +231,6 @@ a.botaoBotao:focus {
   }
 }
 
-/* Footer */
 footer.footer {
   background-color: #1b1b1b;
   color: #fff;

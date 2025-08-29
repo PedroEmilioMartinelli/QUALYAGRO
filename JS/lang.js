@@ -80,12 +80,10 @@ switcher.addEventListener("change", () => {
   document.querySelector(".nav-partners").textContent =
     translations[lang].nav.partners;
 
-  // Main
   document.querySelector(".HomeText").textContent = translations[lang].title;
   document.querySelector(".subtitle").textContent = translations[lang].subtitle;
   document.querySelector(".botaoBotao").textContent = translations[lang].button;
 
-  // Footer
   document.querySelector(
     ".footer-content p:first-child"
   ).innerHTML = `&copy; 2025 QualyAgro - ${translations[lang].footer1}`;
